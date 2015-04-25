@@ -9,7 +9,7 @@ paragraphs: 37
 
 Hãy thử tưởng tượng trong đầu một thí nghiệm như sau. Từ màn hình máy tính, mở 2 cửa sổ dẫn tới cùng một thư mục. Sau đó, bấm chọn một cửa sổ và tiến hành xóa một tập tin trong thư mục ở cửa sổ đó. Câu hỏi đặt ra là: Liệu tập tin bị xóa có biến mất ngay lập tức ở cửa sổ còn lại không?
 
-Tất nhiên, ta không cần phải mở máy tính và thực hiện hết các tao tác trên mới biết được câu trả lời. Các thay đổi thực hiện với hệ thống tập tin trên máy tính (local filesystems) luôn được phản ánh đồng bộ ở mọi nơi mà không cần phải làm mới (refresh) hay tham chiếu ngược (callback).
+Tất nhiên, ta không cần phải mở máy tính và thực hiện hết các thao tác trên mới biết được câu trả lời. Các thay đổi thực hiện với hệ thống tập tin trên máy tính (local filesystems) luôn được phản ánh đồng bộ ở mọi nơi mà không cần phải làm mới (refresh) hay tham chiếu ngược (callback).
 
 Tuy nhiên, hãy xem kịch bản trên sẽ ra sao nếu diễn ra trên nền web. Giả sử, bạn mở cùng một địa chỉ admin của một trang web WordPress trong hai cửa sổ trình duyệt. Sau đó, tiến hành tạo một bài viết mới từ một trong hai cửa sổ đó. Khác với hệ thống tập tin trên máy tính, các cửa sổ của trình duyệt web không phản ánh sự thay đổi tức thì, trừ khi bạn làm mới chúng.
 
@@ -23,7 +23,7 @@ Meteor là một nền tảng được xây dựng trên môi trường Node.js,
 
 Chính vì được xây dựng trên nền Node.js nên Meteor sử dụng JavaScript trên cả máy khách và máy chủ. Hơn thế nữa, Meteor còn cho phép chia sẻ code giữa hai môi trường này.
 
-Có thể nói, Meteor là một nền tảng vừa đơn giản lại mạnh mẽ khi xóa bỏ hầu hết mọi phiền phức và cạm bẫy thông thường hay gặp phải khi phát triển ứng dụng web.
+Có thể nói, Meteor là một nền tảng vừa đơn giản lại vừa mạnh mẽ khi xóa bỏ hầu hết mọi phiền phức và cạm bẫy thông thường hay gặp phải khi phát triển ứng dụng web.
 
 ### Tại sao nên sử dụng Meteor?
 
@@ -39,13 +39,13 @@ Vài năm trở lại đây, chúng tôi có cơ hội làm việc với nhiều
 
 Tuy thật không dễ để tìm ra câu trả lời cho nhiều vấn đề, nhưng chúng tôi đã học hỏi được khá nhiều. Đôi khi phải chọn lọc giải pháp từ nhiều nguồn khác nhau, đôi khi phải tự tìm ra lối đi cho riêng mình. Với cuốn sách này, chúng tôi hy vọng có thể chia sẻ những kiến thức quý báu mình học được và tập hợp chúng thành một cuốn cẩm nang hướng dẫn các bước xây dựng một ứng dụng Meteor từ a đến z.
 
-Ứng dụng Meteor chúng tôi sẽ xây dựng là một phiên bản đơn giản của các kiểu website tin tức xã hội như [Hacker News] (http://news.ycombinator.com) hay [Reddit] (http://reddit.com). Chúng tôi gọi nó là Microscope (được đặt theo tên người anh em Telescope - một ứng dụng Meteor mã nguồn mở - http://telesc.pe). Trong khi xây dựng Microscope, chúng tôi sẽ đề cập đến tất cả các yếu tố cần thiết để tạo ra một ứng dụng Meteor, ví như tài khoản người dùng (user account), bộ sưu tập Meteor (Meteor collection), định tuyến (routing), và nhiều yếu tố khác nữa.
+Ứng dụng Meteor chúng tôi sẽ xây dựng là một phiên bản đơn giản của các kiểu website tin tức xã hội như [Hacker News] (http://news.ycombinator.com) hay [Reddit] (http://reddit.com). Chúng tôi gọi nó là Microscope (được đặt theo tên người anh em Telescope - một ứng dụng Meteor mã nguồn mở - http://telesc.pe). Trong khi xây dựng Microscope, chúng tôi sẽ đề cập đến tất cả các yếu tố cần thiết để tạo ra một ứng dụng Meteor, ví như tài khoản người dùng (user account), bộ sưu tập Meteor (Meteor collection), định tuyến (routing) và nhiều yếu tố khác nữa.
 
 ### Đối tượng của cuốn sách?
 
 Một trong những mục tiêu của chúng tôi khi viết cuốn sách là giữ cho mọi thứ gần gũi và dễ hiểu. Vì vậy, bạn có thể dễ dàng học theo cuốn sách dù chưa từng có kinh nghiệm với Meteor, Node.js, MVC frameworks, hay thậm chí là lập trình cho máy chủ nói chung.
 
-Mặt khác, chúng tôi giả định người đọc phải có hiểu biết cơ bản với các cú pháp và khái niệm của JavaScript. Tuy nhiên, để hiểu cuốn sách này không hề khó, nếu bạn có kinh nghiệm xử lý các mã mã jQuery hay quen thuộc với giao diện điều khiển cho lập trình viên trên các trình duyệt.
+Mặt khác, chúng tôi giả định người đọc phải có hiểu biết cơ bản với các cú pháp và khái niệm của JavaScript. Tuy nhiên, để hiểu cuốn sách này không hề khó, nếu bạn có kinh nghiệm xử lý các mã jQuery hay quen thuộc với giao diện điều khiển cho lập trình viên trên các trình duyệt.
 
 Nếu bạn vẫn chưa thực sự tự tin với kiến thức JavaScript của mình, chúng tôi khuyên bạn nên đọc qua bài viết về [JavaScript cho nền tảng Meteor] (https://www.discovermeteor.com/blog/javascript-for-meteor/) trước khi bắt đầu cuốn sách.
 
