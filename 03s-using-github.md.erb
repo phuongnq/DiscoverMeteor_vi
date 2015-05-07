@@ -8,15 +8,15 @@ contents: Tìm hiểu cách sử dụng GitHub trong suốt cuốn sách này.
 paragraphs: 33
 ---
 
-[GitHub] (https://github.com/) là một kho lưu trữ dữ liệu cho các dự án mã nguồn mở dựa trên hệ thống quản lý version [Git] (http://git-scm.com/), và chức năng chính của nó là làm cho việc chia sẻ mã nguồn và cộng tác trên các dự án được dễ dàng hơn. Nhưng nó cũng là một công cụ học tập tuyệt vời. Trong chương sidebar này, chúng ta sẽ lướt qua một vài cách sử dụng GitHub giúp bạn đi suốt cuốn sách *Khám phá Meteor*.
+[GitHub] (https://github.com/) là một kho lưu trữ dữ liệu cho các dự án mã nguồn mở dựa trên hệ thống quản lý phiên bản [Git] (http://git-scm.com/) với chức năng chính là làm cho việc chia sẻ mã nguồn và cộng tác trên các dự án được dễ dàng hơn. Nhưng nó cũng là một công cụ học tập tuyệt vời. Trong chương sidebar này, chúng ta sẽ lướt qua một vài cách sử dụng GitHub để giúp bạn có thể đi suốt cuốn sách *Khám phá Meteor*.
 
-Chương Sidebar này giả định bạn không quen với Git và GitHub. Nếu bạn đã quen thuộc với cả hai, bạn có thể bỏ qua chương này để đi tiếp!
+Chương Sidebar này giả định bạn chưa quen với Git và GitHub. Nếu bạn đã quen thuộc với cả hai rồi thì bạn có thể bỏ qua chương này để đi tiếp!
 
 ### Commit
 
 Khối làm việc cơ bản của một kho git là *commit*. Bạn có thể tưởng tượng commit như là một bản chụp lại trạng thái của mã nguồn tại một thời điểm.
 
-Thay vì chỉ đơn giản là cung cấp cho bạn mã thành phẩm cho Microscope, chúng tôi đã thực hiện những bản chụp tại mỗi bước cho bạn, và bạn có thể xem tất cả chúng trực tuyến trên GitHub.
+Thay vì chỉ đơn giản là cung cấp cho bạn mã thành phẩm cho Microscope, Git đã thực hiện những bản chụp tại mỗi bước cho bạn và bạn có thể xem tất cả chúng trực tuyến trên GitHub.
 
 Ví dụ, đây là trạng thái của [commit cuối cùng trong chương trước] (https://github.com/DiscoverMeteor/Microscope/commit/chapter3-2):
 
@@ -48,7 +48,7 @@ Bây giờ bạn sẽ có quyền truy cập vào repo với *trạng thái củ
 
 <%= screenshot "s3-6", "The repository at commit 3-2." %>
 
-GitHub không cung cấp cho chúng ta nhiều gợi ý về commit mà chúng ta đang theo dõi, nhưng bạn có thể so sánh với hiển thị của nhánh master “bình thường” để thấy được cấu trúc file có sự thay đổi:
+GitHub không cung cấp cho chúng ta nhiều gợi ý về commit mà chúng ta đang theo dõi, nhưng bạn có thể so sánh với hiển thị của nhánh master “mặc định” để thấy được cấu trúc file có sự thay đổi:
 
 <%= screenshot "s3-7", "The repository at commit 14-2." %>
 
@@ -92,7 +92,7 @@ HEAD is now at a004b56... Added basic posts list template and static data.
 
 Git thông báo cho chúng ta biết rằng chúng ta đang ở trạng thái “detached HEAD”, nghĩa là theo Git, chúng ta có thể quan sát commit trong quá khứ nhưng không thể thay đổi chúng. Bạn có thể suy nghĩ nó giống như là một chiếc gậy phù thuỷ điều tra quá khứ thông qua quả cầu chiêm tinh.
 
-(Lưu ý rằng Git cũng có các lệnh cho phép bạn *thay đổi* commit trong quá khứ. Điều này cũng giống như là cỗ máy vượt thời gian trở về một thời điểm trong quá khứ và chạm vào một con bướn, nhưng nó nằm ngoài phạm vi của phần giới thiệu này).
+(Lưu ý rằng Git cũng có các lệnh cho phép bạn *thay đổi* commit trong quá khứ. Điều này cũng giống như là cỗ máy vượt thời gian trở về một thời điểm trong quá khứ và chạm vào một con bướm, nhưng nó nằm ngoài phạm vi của phần giới thiệu này).
 
 Lý do bạn có thể đơn giản gõ `chapter3-1` là do chúng tôi đã tạo nhãn trước đó cho tất cả commit của Microscope với ký hiệu của từng chương. Nếu không phải vậy, bạn đã cần phải tìm ra **hash** của commit hoặc một định danh đơn trị nào đó.
 
@@ -134,7 +134,7 @@ Bây giờ bạn đã có được danh sách những commit mà ảnh hưởng 
 
 <%= screenshot "s3-10", "GitHub's Blame button." %>
 
-Hiển thị gọn gàng này giúp chúng ta thấy được ai đã thay đổi file, và với commit nào (hay nói cách khác, ai để đổ lỗi khi mà mọi thứ không còn hoạt động như ý):
+Hiển thị gọn gàng này giúp chúng ta thấy được ai đã thay đổi file, và với commit nào (hay nói cách khác ta có thể biết ai để đổ lỗi khi mà mọi thứ không còn hoạt động như ý):
 
 <%= screenshot "s3-11", "GitHub's Blame view." %>
 
